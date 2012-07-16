@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<cloudbees-web-app xmlns="http://www.cloudbees.com/xml/webapp/1">
+
+	<resource name="jdbc/bezudar" auth="Container" type="javax.sql.DataSource">
+		<param name="username" value="abhishek" />
+		<param name="password" value="abhishek" />
+		<param name="url" value="jdbc:cloudbees://bezudar" />
+
+		<!-- Connection Pool settings -->
+		<param name="maxActive" value="100" />
+		<param name="maxIdle" value="2" />
+		<param name="maxWait" value="10000" />
+		<param name="removeAbandoned" value="true" />
+		<param name="removeAbandonedTimeout" value="60" />
+		<param name="logAbandoned" value="true" />
+
+		<!-- Avoid idle database timeouts (for low-usage apps) -->
+		<param name="validationQuery" value="SELECT 1" />
+		<param name="testOnBorrow" value="true" />
+	</resource>
+
+</cloudbees-web-app>
+
