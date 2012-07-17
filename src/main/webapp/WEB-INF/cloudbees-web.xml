@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <cloudbees-web-app xmlns="http://www.cloudbees.com/xml/webapp/1">
 
-	<resource name="jdbc/bezudar" auth="Container" type="javax.sql.DataSource">
+	<resource name="jdbc/girlwebsite" auth="Container" type="javax.sql.DataSource">
 		<param name="username" value="abhishek" />
-		<param name="password" value="abhishek" />
-		<param name="url" value="jdbc:cloudbees://bezudar" />
+		<param name="password" value="abhi123" />
+		<param name="url" value="jdbc:cloudbees://girlwebsite" />
+
 
 		<!-- Connection Pool settings -->
 		<param name="maxActive" value="100" />
