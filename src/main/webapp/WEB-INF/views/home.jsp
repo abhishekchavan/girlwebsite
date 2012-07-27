@@ -2,20 +2,53 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page session="false"%>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Happy Birthday JJ</title>
 
-<link rel="stylesheet" href="resources/css/styles.css" />
+	
+	<!-- Body. -->
+	
+	
+	 <div class="container-fluid">
+		<div class="row-fluid">
+		<div class="span2"></div>
+			<div class="span7">
+				<div id="myCarousel" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="active item">
+							<img src="resources/images/Aastha1.jpg" alt="Working Girl">
+							<div class="carousel-caption">
+								<h4>Aastha@Work</h4>
+								<p>Hard at work. The girl working.</p>
+							</div>
 
-<script type="text/javascript" src="resources/js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<h1>Hello world!</h1>
+						</div>
+						<div class="item">
+							<img src="resources/images/Aastha2.jpg" alt="Working Girl">
+							<div class="carousel-caption">
+								<h4>Aastha with her Colleagues</h4>
+								<p>With her great team members. The HR Fraternity.</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="resources/images/Aastha3.jpg" alt="Working Girl">
+							<div class="carousel-caption">
+								<h4>Aastha with her good friend</h4>
+								<p>Girl who smells likes flowers in the midst of flowers.</p>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control left" href="#myCarousel"	data-slide="prev">&lsaquo;</a> 
+					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+			<div class="span2"></div>
+		</div>
+	</div>
 
-	<P>The time on the server is ${serverTime}.</P>
-</body>
-</html>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#myCarousel').carousel({
+				interval : 5000
+			});
+		});
+	</script>
