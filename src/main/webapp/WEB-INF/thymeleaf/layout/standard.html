@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org" lang="en">
+
+<head th:substituteby="fragments/headTag :: headTag">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AasthaParasher.com</title>
+
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/2.3.1/css/bootstrap.min.css}" rel="stylesheet" />
+<link href="../../../resources/css/main.css" th:href="@{/resources/css/main.css}" rel="stylesheet" />
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"
+	th:href="@{/webjars/bootstrap/2.3.1/js/bootstrap.min.js}"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" th:src="@{/webjars/jquery/1.9.0/jquery.js}"></script>
+</head>
+
+<body>
+	<div class="container-narrow">
+
+		<div class="masthead">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<h3 class="muted">Aastha Parasher</h3>
+		</div>
+
+		<hr></hr>
+
+		<div class="jumbotron">
+			<h1>Super awesome marketing speak!</h1>
+			<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+				condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<a class="btn btn-large btn-success" href="#">Sign up today</a>
+		</div>
+
+		<hr></hr>
+
+		<div class="row-fluid marketing">
+			<div class="span6">
+				<h4>Subheading</h4>
+				<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+				<h4>Subheading</h4>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+				<h4>Subheading</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			</div>
+
+			<div class="span6">
+				<h4>Subheading</h4>
+				<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+				<h4>Subheading</h4>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+				<h4>Subheading</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			</div>
+		</div>
+
+		<hr></hr>
+
+		<div class="footer">
+			<p>&copy; Company 2013</p>
+		</div>
+
+	</div>
+	
+	
+</body>
+
+</html>
